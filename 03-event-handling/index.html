@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 03: Event Handling & Interactive Pages - FullStackJS-103</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Interactive Task Sprint Board</h1>
+      <p>Mastering forms, click events, live search filtering, and keyboard listeners.</p>
+    </header>
+
+    <div class="app-card">
+      <!-- Status Counters -->
+      <div class="counter-bar">
+        <div>Total Tasks: <span id="total-count" class="counter-badge">2</span></div>
+        <div>Completed: <span id="completed-count" class="counter-badge">0</span></div>
+      </div>
+
+      <!-- Add Task Form -->
+      <form id="task-form" class="form-group">
+        <div class="form-row">
+          <input 
+            type="text" 
+            id="task-input" 
+            placeholder="What needs to be done? (Press Esc to clear)" 
+            autocomplete="off"
+            required
+          >
+          <button type="submit" id="add-btn" class="btn-primary">Add Task</button>
+        </div>
+      </form>
+
+      <!-- Live Search / Filter -->
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="filter-input" 
+          placeholder="🔍 Type to filter tasks in real-time..." 
+          autocomplete="off"
+        >
+      </div>
+
+      <!-- Dynamic Task List -->
+      <ul id="task-list" class="task-list">
+        <!-- Initial Task 1 -->
+        <li class="task-item" data-id="1">
+          <span class="task-text">Learn DOM event listeners</span>
+          <div class="task-actions">
+            <button class="btn-sm btn-complete">Complete</button>
+            <button class="btn-sm btn-delete">Delete</button>
+          </div>
+        </li>
+
+        <!-- Initial Task 2 -->
+        <li class="task-item" data-id="2">
+          <span class="task-text">Prevent default form submissions</span>
+          <div class="task-actions">
+            <button class="btn-sm btn-complete">Complete</button>
+            <button class="btn-sm btn-delete">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-links">
+      <a href="../02-dom-manipulation/">← Module 02: DOM Traversal & Manipulation</a>
+      <a href="../">Course Overview →</a>
+    </div>
+  </div>
+
+  <!-- Student script execution -->
+  <script src="events.js"></script>
+</body>
+</html>

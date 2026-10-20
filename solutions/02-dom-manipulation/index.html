@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 02 Solution: DOM Traversal & Manipulation - FullStackJS-103</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="dashboard-title">System Status: Loading...</h1>
+      <p id="system-subtitle">Monitoring server health, user activity, and deployments.</p>
+    </header>
+
+    <div id="status-banner" class="banner" data-status="pending">
+      Initializing system telemetry...
+    </div>
+
+    <!-- Metrics Cards Container -->
+    <section class="dashboard-section">
+      <div class="section-title">
+        <h2>Live Metrics</h2>
+        <span id="metrics-badge" class="stat-status">Live</span>
+      </div>
+
+      <div id="metrics-grid" class="card-grid">
+        <!-- Card 1 -->
+        <div id="card-users" class="stat-card">
+          <h3>Active Users</h3>
+          <div class="stat-value">1,240</div>
+          <span class="stat-status">Current online sessions</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="card-latency" class="stat-card">
+          <h3>Avg Latency</h3>
+          <div class="stat-value">48ms</div>
+          <span class="stat-status">API response time</span>
+        </div>
+
+        <!-- Card 3: Placeholder to be removed in step 5 -->
+        <div id="card-placeholder" class="stat-card">
+          <h3>Temporary Card</h3>
+          <div class="stat-value">N/A</div>
+          <span class="stat-status">To be removed via JS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="dashboard-section">
+      <h2>Announcements</h2>
+      <div id="announcement-feed">
+        <div class="announcement-box">
+          <p id="primary-announcement">Original announcement text.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav-links">
+      <a href="../01-core-fundamentals/">← Module 01 Solution</a>
+      <a href="../03-event-handling/">Next: Module 03 Solution →</a>
+    </div>
+  </div>
+
+  <script src="dom-manipulation.js"></script>
+</body>
+</html>

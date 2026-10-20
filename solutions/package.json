@@ -1,0 +1,22 @@
+{
+  "name": "fullstackjs-103-solutions",
+  "version": "1.0.0",
+  "description": "Solution sets for FullStackJS-103: Vanilla JavaScript in the Browser",
+  "type": "module",
+  "scripts": {
+    "test:01": "node 01-core-fundamentals/fundamentals.js",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "javascript",
+    "dom",
+    "events",
+    "vanilla-js",
+    "workshop"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
